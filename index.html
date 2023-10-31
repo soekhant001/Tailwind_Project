@@ -10,22 +10,31 @@
     <header class="bg-[white]/40 w-full fixed top-0 z-20 backdrop-blur dark:bg-slate-900 dark:bg-opacity-50 dark:backdrop-blur-xl">
       <nav
         class="w-[94%]  container flex justify-between items-center mx-auto py-3 
-        sm:w-[80%] sm:py-2 md:w-[94%]">
+        sm:w-[80%] sm:py-2 md:w-[94%] lg:w-[94%]">
         <!-- logo -->
         <div class="">
-          <h1 class="text-2xl font-bold dark:text-neutral-100">
+          <h1 class="text-2xl font-bold dark:text-neutral-100 lg:text-3xl">
             <i class="fa-regular fa-circle pr-1 text-violet-600"></i>Appwind.
           </h1>
         </div>
 
         <!-- nav list -->
-        <div></div>
+        <div class="hidden lg:flex w-[60%] justify-end ">
+          <ul class="flex justify-end gap-16" >
+            <li class="font-[400] text-xl text-slate-700 dark:text-neutral-200 ">Features</li>
+            <li class="font-[400] text-xl text-slate-700 dark:text-neutral-200 ">About</li>
+            <li class="font-[400] text-xl text-slate-700 dark:text-neutral-200 ">Pricing</li>
+            <li class="font-[400] text-xl text-slate-700 dark:text-neutral-200 ">Reviews</li>
+            <li class="font-[400] text-xl text-slate-700 dark:text-neutral-200 ">Contact</li>
+          </ul>
+
+        </div>
 
      
-        <div class="flex gap-5">
+        <div class="flex gap-5 ">
 
           <div class=" text-center ">
-            <button class="hidden sm:inline-block border outline-none border-none bg-violet-600 py-3 px-7 text-slate-100 rounded-xl">Download</button>
+            <button class="hidden sm:inline-block border outline-none border-none bg-violet-600 py-3 px-7 text-slate-100 rounded-xl lg:text-lg">Download</button>
             <!-- <i class="fa-regular fa-moon text-3xl text-center"></i> -->
           </div>
   
@@ -57,17 +66,20 @@
     <!-- first section -->
     <section
       class="w-[94%] mx-auto h-auto bg-gradient-to-r from-pink-100 to-sky-100 border-1 mt-24 rounded-2xl py-10 
-      dark:bg-gradient-to-r dark:from-gray-800 dark:to-gray-600"
+      dark:bg-gradient-to-r dark:from-gray-800 dark:to-gray-600 lg:w-[92%] "
     >
-      <div class="w-[80%] mx-auto grid gap-y-8 md:w-[90%]">
-        <!-- content -->
-        <div class="text-left w-56 sm:w-full md:w-[50%]">
+      <div class="w-[80%] mx-auto grid gap-y-8 md:w-[90%] lg:flex lg:items-center lg:gap-44 lg:mt-10 lg:mb-10">
+
+        <!-- left -->
+       <div class="space-y-7 lg:w-[50%] ">
+         <!-- content -->
+         <div class="text-left w-56 sm:w-full md:w-[50%] lg:w-[80%]">
           <h1 class="text-4xl font-normal dark:text-neutral-200">
             Tailwind CSS Template for Apps and Software
           </h1>
         </div>
 
-        <div class="font-[400] text-lg text-slate-600  md:w-[70%] md:text-base dark:text-slate-400">
+        <div class="font-[400] text-lg text-slate-600  md:w-[70%] md:text-base dark:text-slate-400 lg:w-[100%]">
           <p>
             All in one Tailwind CSS site template for - App and Software sites.
             Comes with all essential components, clean design and everything you
@@ -101,31 +113,33 @@
             <span class="text-xl font-bold dark:text-neutral-200">Watch Intro</span>
           </div>
         </div>
+       </div>
 
-        <!-- image -->
+        <!--right image -->
         <div class="mx-auto">
-          <img
+          <img class="lg:h-[100%]"
             src="https://app-tailwind.preview.uideck.com/src/images/hero/hero-image-2.svg"
             alt=""
           />
         </div>
+
       </div>
+
     </section>
 
     <!--second section  -->
-
-    <section class="w-[92%] mx-auto mt-10 sm:w-[80%] md:w-[94%]">
+    <section class="w-[92%] mx-auto mt-10 sm:w-[80%] md:w-[94%] lg:mb-20">
       <!-- header -->
-      <div class="w-full mx-auto text-center py-3">
+      <div class="w-full mx-auto text-center py-3 md:w-[70%] lg:w-[40%]">
         <h1 class="font-bold text-3xl py-3 dark:text-neutral-200">Our Recent Awards</h1>
-        <p class="text-lg text-slate-600 font-[400] dark:text-slate-400 sm:text-[16px]">
+        <p class="text-lg text-slate-600 font-[400] dark:text-slate-400 sm:text-[16px] lg:text-[17px]">
           There are many variations of passages of Lorem Ipsum available but the
           majority have suffered alteration in some form.
         </p>
       </div>
 
       <!-- card -->
-      <div class="py-9 grid gap-12 md:grid-cols-2">
+      <div class="py-9 grid gap-12 md:grid-cols-2 lg:grid-cols-3">
         <!-- card1 -->
         <div class="w-full shadow-lg border rounded-3xl dark:bg-slate-800 dark:border-none">
           <div class="w-[80%] mx-auto py-3">
@@ -253,9 +267,9 @@
 
         <!-- card3 -->
         <div class="w-full shadow-lg border rounded-3xl dark:bg-slate-800 dark:border-none">
-          <div class="w-[80%] mx-auto py-5">
+          <div class="w-[80%] mx-auto py-3">
 
-            <div class="">
+            <div class="py-5">
               <h1 class="text-2xl font-medium dark:text-neutral-200">
                 <i class="fa-regular fa-circle pr-1 text-violet-600"></i
                 >Appwind.
@@ -295,9 +309,9 @@
     </section>
 
     <!-- third section -->
-    <section class="w-[92%] mx-auto mt-10 sm:w-[80%] md:w-[94%]">
+    <section class="w-[92%] mx-auto mt-10 sm:w-[80%] md:w-[94%] lg:mb-20">
       <!-- part1 -->
-      <div>
+      <div class="lg:flex lg:items-center lg:mb-10">
         <!-- img -->
         <div>
           <img
@@ -306,7 +320,7 @@
           />
         </div>
         <!-- content -->
-        <div class="py-10 md:w-[65%]">
+        <div class="py-10 md:w-[65%] lg:w-[45%]">
           <span class="text-lg text-violet-600 font-normal"
             >About Application</span
           >
@@ -338,7 +352,7 @@
       </div>
 
       <!-- part2 -->
-      <div class="">
+      <div class="lg:flex lg:flex-row-reverse lg:items-center lg:mt-20">
         <!-- img -->
         <div class="">
           <img
@@ -347,7 +361,7 @@
           />
         </div>
         <!-- content -->
-        <div class="py-10 md:w-[65%]">
+        <div class="py-10 md:w-[65%] lg:w-[45%]">
           <span class="text-lg text-purple-600 font-normal "
             >Easy to Manage Appwind</span
           >
@@ -381,9 +395,9 @@
 
     <!-- fourth section -->
     <section class="w-[94%] mx-auto mt-10 sm:w-[80%] md:w-[94%]">
-      <div class="w-full mx-auto text-center py-3  md:w-[70%]">
+      <div class="w-full mx-auto text-center py-3  md:w-[70%] lg:w-[40%]">
         <h1 class="font-bold text-4xl py-3 dark:text-neutral-200">How it works?</h1>
-        <p class="text-lg text-slate-600 font-[400] sm:text-[16px] dark:text-slate-400">
+        <p class="text-lg text-slate-600 font-[400] sm:text-[16px] dark:text-slate-400 lg:text-[17px]">
           There are many variations of passages of Lorem Ipsum available but the
           majority have suffered alteration in some form.
         </p>
@@ -393,7 +407,7 @@
       <!-- <div class="md:mx-auto md:w-[94%] md:grid md:grid-cols-2 bg-slate-400 md:text-center"> -->
       <div class="md:w-[96%]  md:mx-auto md:flex flex-wrap gap-5">
 
-        <div class="w-full mx-auto text-center py-3 mt-10 sm:w-[70%]  md:w-[45%]">
+        <div class="w-full mx-auto text-center py-3 mt-10 sm:w-[70%]  md:w-[45%] lg:w-[28%]">
           <span
             class="inline-block group bg-slate-200 p-5 rounded-t-3xl rounded-b-3xl hover:bg-purple-600 transition-all duration-300"
           >
@@ -415,7 +429,7 @@
           </p>
         </div>
 
-        <div class="w-full mx-auto text-center py-3 mt-10 sm:w-[70%]  md:w-[45%]">
+        <div class="w-full mx-auto text-center py-3 mt-10 sm:w-[70%]  md:w-[45%] lg:w-[28%]">
           <span
             class="inline-block group bg-slate-200 p-5 rounded-t-3xl rounded-b-3xl hover:bg-purple-600 transition-all duration-300"
           >
@@ -437,7 +451,7 @@
           </p>
         </div>
 
-        <div class="w-full mx-auto text-center py-3 mt-10 sm:w-[70%]   md:w-[45%]">
+        <div class="w-full mx-auto text-center py-3 mt-10 sm:w-[70%]   md:w-[45%] lg:w-[28%]">
           <span
             class="inline-block group bg-slate-200 p-5 rounded-t-3xl rounded-b-3xl hover:bg-purple-600 transition-all duration-300"
           >
@@ -465,11 +479,11 @@
     <section
       class="w-[94%] mx-auto h-auto bg-gr bg-gradient-to-r from-pink-100 to-sky-100 border-1 mt-24 rounded-2xl pt-10
       dark:bg-gradient-to-r dark:from-gray-800 dark:to-gray-600 
-      sm:w-[80%] md:w-[94%]"
+      sm:w-[80%] md:w-[94%] lg:mb-28"
     >
-      <div class="w-[88%] mx-auto grid gap-y-8  md:w-[84%]">
+      <div class="w-[88%] mx-auto grid gap-y-8  md:w-[84%] lg:flex lg:items-center lg:gap-x-24">
         <!-- left content -->
-        <div class=" md:w-[65%]">
+        <div class=" md:w-[65%] lg:mb-20 lg:mt-5 lg:w-[40%] ">
           <span class="text-lg text-violet-600 font-semibold"
             >Download Now!</span
           >
@@ -538,28 +552,28 @@
         </div>
 
         <!-- right image -->
-        <div class="flex overflow-hidden">
+        <div class="flex overflow-hidden lg:w-[50%] ">
           <img
             src="https://app-tailwind.preview.uideck.com/src/images/cta/cta-image-1.svg"
             alt=""
-            class="w-[55%] relative z-10 md:w-[40%] "
+            class="w-[55%] relative z-10 md:w-[40%] lg:w-[50%]"
           />
           <img
             src="https://app-tailwind.preview.uideck.com/src/images/cta/cta-image-2.svg"
             alt=""
-            class="w-[55%] relative -left-8  md:w-[40%] md:relative md:left-14 md:-bottom-14 "
+            class="w-[55%] relative -left-8  md:w-[40%] lg:w-[50%] md:relative md:left-14 md:-bottom-14 lg:left-2"
           />
         </div>
       </div>
     </section>
 
     <!-- sixth section -->
-    <section class="w-[94%] mx-auto mt-10 mb-20 sm:w-[80%] md:w-[94%]">
+    <section class="w-[94%] mx-auto mt-10 mb-20 sm:w-[80%] md:w-[94%] lg:mb-32">
       <!-- heading -->
       <div class="w-full">
-        <div class="w-[97%] mx-auto text-center py-3 md:w-[70%]">
+        <div class="w-[97%] mx-auto text-center py-3 md:w-[70%] lg:w-[40%] ">
           <h1 class="font-bold text-4xl py-3 dark:text-neutral-200">Flexible Plans</h1>
-          <p class="text-base text-slate-600 font-[400] sm:text-[16px] dark:text-slate-400">
+          <p class="text-base text-slate-600 font-[400] sm:text-[16px] dark:text-slate-400 lg:text-[17px]">
             There are many variations of passages of Lorem Ipsum available but
             the majority have suffered alteration in some form.
           </p>
@@ -567,10 +581,10 @@
       </div>
 
       <!--to flex -->
-      <div class="md:w-[100%] md:flex md:flex-wrap md:gap-x-[41px] ">
+      <div class="md:w-[100%] md:flex md:flex-wrap md:gap-x-[41px] lg:gap-x-11 lg:my-10">
         <!-- item1 -->
         <div
-          class="w-full border-2 border-violet-200 rounded-3xl relative overflow-hidden mt-10 md:w-[47%] dark:border-slate-500"
+          class="w-full border-2 border-violet-200 rounded-3xl relative overflow-hidden mt-10 md:w-[47%] dark:border-slate-500 lg:w-[31%]"
         >
           <div class="w-[88%] mx-auto py-10">
             <span class="text-2xl font-semibold dark:text-neutral-200">Basic Plan</span>
@@ -817,7 +831,7 @@
 
         <!-- item2 -->
         <div
-          class="w-full border-2 border-violet-200 rounded-3xl relative overflow-hidden mt-10 md:w-[47%] dark:border-slate-500"
+          class="w-full border-2 border-violet-200 rounded-3xl relative overflow-hidden mt-10 md:w-[47%] dark:border-slate-500 lg:w-[31%]"
         >
           <div class="w-[88%] mx-auto py-10">
             <span class="text-2xl font-semibold dark:text-neutral-200">Popular Plan</span>
@@ -1063,7 +1077,7 @@
         </div>
         <!-- item3 -->
         <div
-          class="w-full border-2 border-violet-200 rounded-3xl relative overflow-hidden mt-10 md:w-[47%] dark:border-slate-500"
+          class="w-full border-2 border-violet-200 rounded-3xl relative overflow-hidden mt-10 md:w-[47%] dark:border-slate-500 lg:w-[31%]"
         >
           <div class="w-[88%] mx-auto py-10">
             <span class="text-2xl font-semibold dark:text-neutral-200">Golden Plan</span>
@@ -1314,9 +1328,9 @@
     <!-- seventh section -->
     <section class="w-full bg-sky-200 pb-14 dark:bg-gray-800">
       <div class="sm:w-[80%] sm:mx-auto md:w-[94%]">
-        <div class="w-[92%] mx-auto text-center py-16 md:w-[70%]">
+        <div class="w-[92%] mx-auto text-center py-16 md:w-[70%] lg:w-[40%]">
           <h1 class="font-bold text-4xl py-3 dark:text-neutral-200">What Clients Say?</h1>
-          <p class="text-lg text-slate-600 font-[600px] sm:text-[16px] dark:text-slate-400">
+          <p class="text-lg text-slate-600 font-[600px] sm:text-[16px] dark:text-slate-400 lg:text-[17px]">
             There are many variations of passages of Lorem Ipsum available but
             the majority have suffered alteration in some form.
           </p>
@@ -1329,7 +1343,7 @@
           <div
             class="group w-full bg-stone-100 py-10 rounded-tr-3xl rounded-br-3xl rounded-bl-3xl shadow-xl mb-10 relative hover:bg-violet-600 transition-all duration-300
             dark:bg-slate-700
-            md:w-[48%]"
+            md:w-[48%] lg:w-[31%]"
           >
             <div class="w-[82%] mx-auto group-hover:text-slate-100 transition-all duration-300">
               <!-- content -->
@@ -1470,7 +1484,7 @@
           <!-- reviewer 2 -->
           <div
             class="group w-full bg-stone-100 py-10 rounded-tr-3xl rounded-br-3xl rounded-bl-3xl shadow-xl mb-10 relative hover:bg-violet-600 transition-all duration-300 dark:bg-slate-700
-            md:w-[48%]"
+            md:w-[48%] lg:w-[31%]"
           >
             <div class="w-[82%] mx-auto group-hover:text-slate-100 transition-all duration-300">
               <!-- content -->
@@ -1609,7 +1623,7 @@
           <!-- reviewer 3 -->
           <div
             class="group w-full bg-stone-100 py-10 rounded-tr-3xl rounded-br-3xl rounded-bl-3xl shadow-xl mb-10 relative hover:bg-violet-600 transition-all duration-300 dark:bg-slate-700
-            md:w-[48%]"
+            md:w-[48%] lg:w-[31%]"
           >
             <div class="w-[82%] mx-auto group-hover:text-slate-100 transition-all duration-300">
               <!-- content -->
@@ -1750,7 +1764,7 @@
           <!-- reviewer 4 -->
           <div
             class="group w-full bg-stone-100 py-10 rounded-tr-3xl rounded-br-3xl rounded-bl-3xl shadow-xl mb-10 relative hover:bg-violet-600 transition-all duration-300 dark:bg-slate-700
-            md:w-[48%]"
+            md:w-[48%] lg:w-[31%]"
           >
             <div class="w-[82%] mx-auto group-hover:text-slate-100 transition-all duration-300">
               <!-- content -->
@@ -1889,7 +1903,7 @@
           <!-- reviewer 5 -->
           <div
             class="group w-full bg-stone-100 py-10 rounded-tr-3xl rounded-br-3xl rounded-bl-3xl shadow-xl mb-10 relative hover:bg-violet-600 dark:bg-slate-700
-            md:w-[48%]"
+            md:w-[48%] lg:w-[31%]"
           >
             <div class="w-[82%] mx-auto group-hover:text-slate-100 transition-all duration-300">
               <!-- content -->
@@ -2028,7 +2042,7 @@
           <!-- reviewer 6 -->
           <div
             class="group w-full bg-stone-100 py-10 rounded-tr-3xl rounded-br-3xl rounded-bl-3xl shadow-xl mb-10 relative hover:bg-violet-600 dark:bg-slate-700
-            md:w-[48%]"
+            md:w-[48%] lg:w-[31%]"
           >
             <div class="w-[82%] mx-auto group-hover:text-slate-100 transition-all duration-300">
               <!-- content -->
@@ -2171,18 +2185,21 @@
 
     <!-- eighth section -->
     <section class="w-full mx-auto mb-20 sm:w-[80%] md:w-[94%]">
-      <div class="w-[94%] mx-auto text-center py-16 md:w-[70%]">
+      <div class="w-[94%] mx-auto text-center py-16 md:w-[70%] lg:w-[40%]">
         <h1 class="font-bold text-4xl py-3 dark:text-neutral-200">Recent Articles</h1>
-        <p class="text-lg text-slate-600 font-[600px] sm:text-[16px] dark:text-slate-400">
+        <p class="text-lg text-slate-600 font-[600px] sm:text-[16px] dark:text-slate-400 lg:text-[17px]">
           There are many variations of passages of Lorem Ipsum available but the
           majority have suffered alteration in some form.
         </p>
       </div>
 
       <!-- articles -->
-      <div class="w-[94%] grid grid-cols-1 mx-auto overflow-hidden md:w-[100%]">
-        <!-- article1 -->
-        <div class="w-full h-[270px] relative">
+      <div class="w-[94%] grid grid-cols-1 mx-auto overflow-hidden md:w-[100%] lg:flex lg:justify-between lg:gap-5">
+
+        <!-- left -->
+     <div class="lg:w-[50%]">
+         <!-- article1 -->
+         <div class="w-full h-[270px] relative">
           <img
             src="./images/blog-1.jpg"
             alt=""
@@ -2229,7 +2246,7 @@
         </div>
 
         <!-- article2 -->
-        <div class="w-full h-[270px] relative mt-10">
+        <div class="w-full h-[270px] relative mt-10 row-span-2">
           <img
             src="./images/blog-2.jpg"
             alt=""
@@ -2271,9 +2288,10 @@
             </div>
           </div>
         </div>
+     </div>
 
         <!-- article3 -->
-        <div class="w-full h-[480px] relative mt-10">
+        <div class="w-full h-[480px] relative mt-10 lg:w-[50%] lg:h-[580px] lg:mt-0">
           <img
             src="./images/blog-3.jpg"
             alt=""
@@ -2323,7 +2341,7 @@
     <!--ninght section  -->
     <section class="w-[full] bg-gradient-to-r from-pink-100 to-sky-100  mx-auto md:w-[94%] md:rounded-xl">
 
-     <div class="flex-wrap justify-center justify-items-center items-center   py-10 w-[60%] mx-auto text-center md:w-[80%] ">
+     <div class="flex-wrap justify-center justify-items-center items-center   py-10 w-[60%] mx-auto text-center md:w-[80%] lg:space-x-5">
      
       <div class="hover:-translate-x-5 transition-all duration-500 py-3 px-3  sm:inline-block ">
         <a href="https://uideck.com/templates/tag/tailwind/" class="max-w-xl ">
@@ -2331,21 +2349,21 @@
         </a>
       </div>
       
-      <div class="hover:-translate-x-5 transition-all duration-500 py-3 px-3  sm:inline-block ">
+      <div class="hover:-translate-x-5 transition-all duration-500 py-3 px-3  sm:inline-block">
         <a href="https://tailgrids.com/" class="">
           <img src="https://app-tailwind.preview.uideck.com/src/images/brands/tailgrids.svg" alt="UIdeck" class="mx-auto bg-transparent max-w-[160px]">
         </a>
       </div>
       
 
-      <div class="hover:-translate-x-5 transition-all duration-500 py-3 px-3  sm:inline-block ">
+      <div class="hover:-translate-x-5 transition-all duration-500 py-3 px-3  sm:inline-block">
         <a href="https://lineicons.com/" class="">
           <img src="https://app-tailwind.preview.uideck.com/src/images/brands/lineicons.svg" alt="UIdeck" class="mx-auto bg-transparent max-w-[160px] h-10">
         </a>
       </div>
      
 
-      <div class="hover:-translate-x-5 transition-all duration-500 py-3 px-3   sm:inline-block   ">
+      <div class="hover:-translate-x-5 transition-all duration-500 py-3 px-3   sm:inline-block  ">
         <a href="https://ayroui.com/" class="">
           <img src="https://app-tailwind.preview.uideck.com/src/images/brands/ayroui.svg" alt="UIdeck" class="mx-auto bg-transparent max-w-[160px]">
         </a>
@@ -2362,18 +2380,18 @@
     </section>
 
     <!-- tenth section -->
-    <section class="sm:w-[80%] mx-auto md:w-[94%]">
-      <div class="w-[92%] mx-auto text-center py-16 md:w-[70%]">
+    <section class="sm:w-[80%] mx-auto md:w-[94%] overflow-hidden">
+      <div class="w-[92%] mx-auto text-center py-16 md:w-[70%] lg:w-[40%]">
         <h1 class="font-bold text-4xl py-3 dark:text-neutral-200">Need Any Help</h1>
-        <p class="text-lg text-slate-600 font-[400] sm:text-[16px] dark:text-slate-400">
+        <p class="text-lg text-slate-600 font-[400] sm:text-[16px] dark:text-slate-400 lg:text-[17px]">
           There are many variations of passages of Lorem Ipsum available but
           the majority have suffered alteration in some form.
         </p>
       </div>
 
-      <div class="w-[94%] bg-white  border border-sky-200 shadow-lg mx-auto py-10 rounded-xl px-2 md:w-[100%] dark:bg-indigo-950 dark:border-none">
+      <div class="relative  w-[94%]  bg-white  border border-sky-200 shadow-lg mx-auto py-10 rounded-xl px-2 md:w-[100%] lg:w-[60%] dark:bg-indigo-950 dark:border-none">
 
-      <div class=" w-[90%] mx-auto md:w-[80%] ">
+      <div class=" w-[90%] mx-auto md:w-[80%]  my-10">
         <form action="" class="flex-col space-y-6 ">
           <div class="flex flex-wrap gap-y-7 md:flex md:flex-wrap md:justify-between md:gap-y-5">
             <div class="flex-col space-y-3 md:w-[45%]">
@@ -2406,19 +2424,94 @@
           </div>
         </form>
       </div>
+      <span class="absolute -z-10 -left-16 bottom-10 "><svg width="126" height="156" viewBox="0 0 126 156" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M62.9999 126C97.8032 126 126 97.7947 126 63C126 28.2053 97.8032 0 62.9999 0C28.2137 0 -6.10352e-05 28.2053 -6.10352e-05 63C-6.10352e-05 97.7947 28.2137 126 62.9999 126Z" fill="url(#paint0_radial_100_549)"></path>
+        <circle cx="45.3482" cy="119.68" r="1.72625" transform="rotate(-120 45.3482 119.68)" fill="#8B5CF6"></circle>
+        <circle cx="71.3609" cy="104.662" r="1.72625" transform="rotate(-120 71.3609 104.662)" fill="#8B5CF6"></circle>
+        <circle cx="32.7905" cy="126.931" r="1.72625" transform="rotate(-120 32.7905 126.931)" fill="#8B5CF6"></circle>
+        <circle cx="58.2051" cy="112.258" r="1.72625" transform="rotate(-120 58.2051 112.258)" fill="#8B5CF6"></circle>
+        <circle cx="84.2176" cy="97.2391" r="1.72625" transform="rotate(-120 84.2176 97.2391)" fill="#8B5CF6"></circle>
+        <circle cx="60.3668" cy="145.693" r="1.72625" transform="rotate(-120 60.3668 145.693)" fill="#8B5CF6"></circle>
+        <circle cx="37.7528" cy="106.525" r="1.72625" transform="rotate(-120 37.7528 106.525)" fill="#8B5CF6"></circle>
+        <circle cx="86.3793" cy="130.675" r="1.72625" transform="rotate(-120 86.3793 130.675)" fill="#8B5CF6"></circle>
+        <circle cx="63.7654" cy="91.5066" r="1.72625" transform="rotate(-120 63.7654 91.5066)" fill="#8B5CF6"></circle>
+        <circle cx="47.809" cy="152.944" r="1.72625" transform="rotate(-120 47.809 152.944)" fill="#8B5CF6"></circle>
+        <circle cx="25.195" cy="113.775" r="1.72625" transform="rotate(-120 25.195 113.775)" fill="#8B5CF6"></circle>
+        <circle cx="73.2235" cy="138.27" r="1.72625" transform="rotate(-120 73.2235 138.27)" fill="#8B5CF6"></circle>
+        <circle cx="50.6096" cy="99.1019" r="1.72625" transform="rotate(-120 50.6096 99.1019)" fill="#8B5CF6"></circle>
+        <circle cx="99.2361" cy="123.252" r="1.72625" transform="rotate(-120 99.2361 123.252)" fill="#8B5CF6"></circle>
+        <circle cx="76.6221" cy="84.0833" r="1.72625" transform="rotate(-120 76.6221 84.0833)" fill="#8B5CF6"></circle>
+        <circle cx="52.7713" cy="132.537" r="1.72625" transform="rotate(-120 52.7713 132.537)" fill="#8B5CF6"></circle>
+        <circle cx="30.1573" cy="93.3689" r="1.72625" transform="rotate(-120 30.1573 93.3689)" fill="#8B5CF6"></circle>
+        <circle cx="78.7839" cy="117.519" r="1.72625" transform="rotate(-120 78.7839 117.519)" fill="#8B5CF6"></circle>
+        <circle cx="56.17" cy="78.3504" r="1.72625" transform="rotate(-120 56.17 78.3504)" fill="#8B5CF6"></circle>
+        <circle cx="40.2136" cy="139.788" r="1.72625" transform="rotate(-120 40.2136 139.788)" fill="#8B5CF6"></circle>
+        <circle cx="17.5996" cy="100.619" r="1.72625" transform="rotate(-120 17.5996 100.619)" fill="#8B5CF6"></circle>
+        <circle cx="65.6281" cy="125.115" r="1.72625" transform="rotate(-120 65.6281 125.115)" fill="#8B5CF6"></circle>
+        <circle cx="43.0141" cy="85.9466" r="1.72625" transform="rotate(-120 43.0141 85.9466)" fill="#8B5CF6"></circle>
+        <circle cx="91.6406" cy="110.096" r="1.72625" transform="rotate(-120 91.6406 110.096)" fill="#8B5CF6"></circle>
+        <circle cx="69.0267" cy="70.9275" r="1.72625" transform="rotate(-120 69.0267 70.9275)" fill="#8B5CF6"></circle>
+        <defs>
+        <radialGradient id="paint0_radial_100_549" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(62.9999) rotate(90) scale(126)">
+        <stop stop-color="white"></stop>
+        <stop offset="0.569" stop-color="#E4F2FE"></stop>
+        <stop offset="0.993" stop-color="#D2E2EF"></stop>
+        </radialGradient>
+        </defs>
+        </svg></span>
+        <span class="absolute -z-10 -right-14 -top-8">
+          <svg width="161" height="189" viewBox="0 0 161 189" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M160.578 80.5879C160.578 36.3933 124.762 0.587885 80.5784 0.587887C36.3946 0.587889 0.578432 36.3933 0.578434 80.5879C0.578436 124.761 36.3947 160.588 80.5784 160.588C124.762 160.588 160.578 124.761 160.578 80.5879Z" fill="url(#paint0_radial_100_548)"></path>
+            <circle cx="93.1069" cy="153.111" r="1.72625" transform="rotate(-120 93.1069 153.111)" fill="#8B5CF6"></circle>
+            <circle cx="119.12" cy="138.093" r="1.72625" transform="rotate(-120 119.12 138.093)" fill="#8B5CF6"></circle>
+            <circle cx="80.5492" cy="160.362" r="1.72625" transform="rotate(-120 80.5492 160.362)" fill="#8B5CF6"></circle>
+            <circle cx="105.964" cy="145.688" r="1.72625" transform="rotate(-120 105.964 145.688)" fill="#8B5CF6"></circle>
+            <circle cx="131.976" cy="130.67" r="1.72625" transform="rotate(-120 131.976 130.67)" fill="#8B5CF6"></circle>
+            <circle cx="108.125" cy="179.124" r="1.72625" transform="rotate(-120 108.125 179.124)" fill="#8B5CF6"></circle>
+            <circle cx="85.5115" cy="139.955" r="1.72625" transform="rotate(-120 85.5115 139.955)" fill="#8B5CF6"></circle>
+            <circle cx="134.138" cy="164.105" r="1.72625" transform="rotate(-120 134.138 164.105)" fill="#8B5CF6"></circle>
+            <circle cx="111.524" cy="124.937" r="1.72625" transform="rotate(-120 111.524 124.937)" fill="#8B5CF6"></circle>
+            <circle cx="95.5677" cy="186.374" r="1.72625" transform="rotate(-120 95.5677 186.374)" fill="#8B5CF6"></circle>
+            <circle cx="72.9537" cy="147.206" r="1.72625" transform="rotate(-120 72.9537 147.206)" fill="#8B5CF6"></circle>
+            <circle cx="120.982" cy="171.701" r="1.72625" transform="rotate(-120 120.982 171.701)" fill="#8B5CF6"></circle>
+            <circle cx="98.3683" cy="132.533" r="1.72625" transform="rotate(-120 98.3683 132.533)" fill="#8B5CF6"></circle>
+            <circle cx="146.995" cy="156.682" r="1.72625" transform="rotate(-120 146.995 156.682)" fill="#8B5CF6"></circle>
+            <circle cx="124.381" cy="117.514" r="1.72625" transform="rotate(-120 124.381 117.514)" fill="#8B5CF6"></circle>
+            <circle cx="100.53" cy="165.968" r="1.72625" transform="rotate(-120 100.53 165.968)" fill="#8B5CF6"></circle>
+            <circle cx="77.916" cy="126.8" r="1.72625" transform="rotate(-120 77.916 126.8)" fill="#8B5CF6"></circle>
+            <circle cx="126.543" cy="150.95" r="1.72625" transform="rotate(-120 126.543 150.95)" fill="#8B5CF6"></circle>
+            <circle cx="103.929" cy="111.781" r="1.72625" transform="rotate(-120 103.929 111.781)" fill="#8B5CF6"></circle>
+            <circle cx="87.9723" cy="173.219" r="1.72625" transform="rotate(-120 87.9723 173.219)" fill="#8B5CF6"></circle>
+            <circle cx="65.3583" cy="134.05" r="1.72625" transform="rotate(-120 65.3583 134.05)" fill="#8B5CF6"></circle>
+            <circle cx="113.387" cy="158.546" r="1.72625" transform="rotate(-120 113.387 158.546)" fill="#8B5CF6"></circle>
+            <circle cx="90.7728" cy="119.377" r="1.72625" transform="rotate(-120 90.7728 119.377)" fill="#8B5CF6"></circle>
+            <circle cx="139.399" cy="143.527" r="1.72625" transform="rotate(-120 139.399 143.527)" fill="#8B5CF6"></circle>
+            <circle cx="116.785" cy="104.358" r="1.72625" transform="rotate(-120 116.785 104.358)" fill="#8B5CF6"></circle>
+            <defs>
+            <radialGradient id="paint0_radial_100_548" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(0.578434 80.5879) scale(160)">
+            <stop stop-color="white"></stop>
+            <stop offset="0.569" stop-color="#FFEEFE"></stop>
+            <stop offset="0.993" stop-color="#F1C6EF"></stop>
+            </radialGradient>
+            </defs>
+            </svg>
+        </span>
+     
 
       </div>
+
+     
       
     </section>
 
     <!-- final section -->
-  <footer class=" ">
+  <footer class="">
     <div class="w-full bg-sky-100 py-20 mt-20 relative dark:bg-gray-800">
 
       <div class="w-[92%]  mx-auto  space-y-10 sm:w-[80%] sm:flex flex-wrap gap-x-20 md:w-[94%] md:gap-x-1 md:space-y-0 md:justify-between md:gap-y-7 ">
 
         <!-- 1 -->
-        <div class="space-y-5 md:w-[45%] ">
+        <div class="space-y-5 md:w-[45%] lg:w-[24%] ">
           <h1 class="text-3xl font-bold dark:text-neutral-200">
             <i class="fa-regular fa-circle pr-1 text-violet-600"></i>Appwind.
           </h1>
@@ -2433,7 +2526,7 @@
         </div>
 
         <!-- 2 -->
-        <div class=" md:w-[45%]">
+        <div class=" md:w-[45%] lg:w-[22%] lg:ml-5">
           <h3 class="font-semibold text-2xl dark:text-neutral-200">Quick Links</h3>
          <ul class="mt-5 flex-col space-y-3">
           <li><a href="" class="text-base font-[400] text-slate-600 dark:text-slate-300">Our Blog</a></li>
@@ -2444,7 +2537,7 @@
         </div>
 
         <!-- 3 -->
-        <div class="md:w-[45%]">
+        <div class="md:w-[45%] lg:w-[24%] ">
           <h3 class="font-semibold text-2xl dark:text-neutral-200">App Information</h3>
          <ul class="mt-5 flex-col space-y-3">
           <li><a href="" class="text-base font-[400] text-slate-600 dark:text-slate-300">Style Guideline</a></li>
@@ -2455,7 +2548,7 @@
         </div>
 
         <!-- 4 -->
-        <div class="pb-10 md:w-[45%]">
+        <div class="pb-10 md:w-[45%] lg:w-[24%]">
           <h3 class="font-semibold text-2xl dark:text-neutral-200">Join Our Newsletter</h3>
           <p class="text-base font-[400] text-slate-600 py-8 dark:text-slate-300">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores, necessitatibus.</p>
 
